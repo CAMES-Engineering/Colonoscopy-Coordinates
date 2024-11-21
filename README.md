@@ -1,4 +1,3 @@
-```
 # Colonoscope Coordinates Dataset
 
 ## Overview
@@ -70,6 +69,3 @@ We would like to thank the clinicians and patients who made this work possible.
 For more information or inquiries, please [DOI publication]
 
 We would be grateful if you cited the [DOI publication] when using the code or/and dataset
-
-```
-
