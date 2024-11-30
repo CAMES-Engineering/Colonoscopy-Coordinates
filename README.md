@@ -20,9 +20,39 @@ These data are freely available to researchers and developers at [DOI DATA]. Pot
 ## Contents
 
 This repository contains code examples for utilizing the dataset effectively. Some key applications of the dataset include:
+**plot_scripts.py**: Functions for datahandling, and assisting with plotting and analysis  
+
+Example include (in usage_examples.py) :
 
 - **Colonoscope Path Mapping**: Visualizing the movement of the colonoscope through the colon over time.
+```
+def plot_multiple_case_tip_paths(source_path, save_dir):
+    """
+    Plots the tip paths for multiple cases, each with annotated events, and saves the plots in the specified directory.
+
+    Parameters:
+    - source_path (str): The base directory containing the data files.
+    - save_dir (str): The directory where the generated plots will be saved.
+
+    Outputs:
+    - Multiple PNG files saved in the specified directory, each representing the tip path for a case with annotated events.
+    """
+```
+
 - **Heatmap Generation**: Creating heatmaps to visualize coverage of the colon during endoscopy
+ ```
+def zeroed_plot_multiple_case_tip_paths(source_path, save_dir):
+    """
+    Plots heatmaps for multiple cases with zeroed reference points and saves the plots in the specified directory.
+
+    Parameters:
+    - source_path (str): The base directory containing the data files.
+    - save_dir (str): The directory where the generated plots will be saved.
+
+    Outputs:
+    - Multiple PNG files saved in the specified directory, each representing a heatmap for a case.
+    """
+```
 
 ## Dataset Description
 See [DOI] and [DOI Data]
@@ -39,14 +69,6 @@ See [DOI] and [DOI Data]
 2. **Access the dataset**: Download the dataset from [DOI DATA] and place it in the [appropriate folder].
 3. **Run the examples**: Use the provided code to explore how to start working with the dataset.
 
-## Examples
-
-- **Path Visualization**: 
-  - Scripts to visualize the colonoscope's path and annotate points of interest.
-- **Retraction and Progression Scoring**: 
-  - Examples of calculating the Colonoscopy Retraction Score and Colonoscopy Progression Score.
-- **Heatmap Generation**: 
-  - Tools to create inspection heatmaps for assessing procedural coverage.
 
 ## Usage
 
